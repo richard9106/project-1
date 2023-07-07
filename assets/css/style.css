@@ -29,9 +29,19 @@ li{
     width: 100%;
     height: 60vh;
     background-color: lightblue;
+  
 }
 #nav-container{
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
+        
+}
+#nav-container > figure {
+    width: 296px;
+    height: 195px;
+}
+#nav-container > ul{
+    display: inline-block;
 }
