@@ -3,7 +3,7 @@ but allowing components to change*/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-  
+
 }
 
 *,
@@ -13,46 +13,51 @@ html {
 }
 
 /*Globals*/
-figure{
-    margin:0;
-    padding:0;
+figure {
+    margin: 0;
+    padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 400;
-    color:black;
+    color: black;
 }
-li{
+
+li {
     list-style: none;
 }
 
-/*Header section*/
-#header-container{
-    width: 100%;
-    height: 80vh;
-    background-color: lightblue;
-    background:url("/assets/images/background-1.jpg") no-repeat center center / cover;
-  
-}
-#nav-container{
+/*Navegation and logo*/
+
+#nav-container {
     padding: 10px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, .6);
-        
+    background-color: rgb(92, 190, 223);
+
 }
-#nav-container img{
+
+#logo {
     width: 150px;
 }
 
-#nav-container > ul {
-    display:flex;
+#nav-container>ul {
+    display: flex;
     /* margin:0 auto; */
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+/*Header section*/
+#header-container {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(173, 216, 230);
+    background: url("/assets/images/background-1.jpg") no-repeat center center / cover;
+
 }
