@@ -43,6 +43,7 @@ a {
     color: black;
 }
 
+
 /*Navegation and logo*/
 
 #nav-container {
@@ -50,12 +51,12 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(92, 190, 223);
+    background-color: rgba(92, 223, 129, 0.729);
 
 }
 
 #logo {
-    width: 150px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -89,13 +90,40 @@ a {
     top: 30%;
     width: 500px;
     height: 400px;
-    background-color: rgba(92, 190, 223, .5);
+    background-color: rgba(92, 223, 129, .5);
     border-radius: 20px;
     text-align: center;
     justify-content: center;
+    animation: 5s hook-zoom forwards;
     
 }
 
 #header-container > div > h1{
     color: rgb(125, 62, 17);
+}
+
+/*animation for content header*/
+@keyframes hook-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/*button header content*/
+.general-button{
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+.general-button:hover{
+    transform: scale(1.1);
+}
+.general-button a{
+    display: block;
 }
