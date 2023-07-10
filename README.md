@@ -1,4 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Hacks for new parents logo](/assets/images/logo-1.png)
 
 Welcome,
 
@@ -6,7 +6,10 @@ This is the Code Institute student template for Codeanywhere. We have preinstall
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
 
-## Codeanywhere Reminders
+## images are from
+
+https://www.istockphoto.com/
+
 
 To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 
