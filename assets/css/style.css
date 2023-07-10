@@ -17,7 +17,8 @@ html {
 /*Globals*/
 
 h1{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    color: #CD2971;
 }
 h2{
     font-size: 2.8rem;
@@ -43,7 +44,10 @@ a {
     font-weight: 400;
     color: black;
 }
-
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /*Navegation and logo*/
 
@@ -70,7 +74,7 @@ a {
 }
 
 #nav-container > ul > li:hover a{
-    color:yellow;
+    color:#CD2971;
     border-bottom: 1px solid yellow;
 }
 
@@ -78,29 +82,25 @@ a {
 /*Header section*/
 #header-container {
     width: 100%;
-    height: 80vh;
-    background-color: rgb(173, 216, 230);
-    background: url("/assets/images/background-1.jpg") no-repeat center top / cover;
+    height: 75vh;
+    background-color:#CD2971;
+    background: url("/assets/images/background-3.jpg") no-repeat right top / cover;
 }
 
-#header-container > div{
-    display: flex;
-    flex-direction: column;
+#hook-container, #hook-support-container{
+    width: 400px;
+    padding: 20px;
     position: relative;
     left: 20%;
-    top: 30%;
-    width: 500px;
-    height: 400px;
+    top: 20%; 
     background-color: rgba(92, 223, 129, .5);
     border-radius: 20px;
     text-align: center;
     justify-content: center;
-    animation: 5s hook-zoom forwards;
-    
+    animation: 5s hook-zoom forwards;  
 }
-
-#header-container > div > h1{
-    color: rgb(125, 62, 17);
+#hook-container p, #hook-support-container p{
+    font-size: 1.5rem;
 }
 
 /*animation for content header*/
@@ -116,11 +116,10 @@ a {
 
 /*button header content*/
 .general-button{
-    padding: 10px;
     margin: 0 auto;
     width: 300px;
     background-color: blanchedalmond;
-    border-radius: 20px;
+    border-radius: 10px;
     line-height: 2.5rem;
 }
 .general-button:hover{
@@ -128,13 +127,14 @@ a {
 }
 .general-button a{
     display: block;
+    font-size: 1rem;
 }
 
 /*First steps section*/
 #first-steps-container{
     width: 100%;
     padding: 20px;
-    color: rgb(125, 62, 17) ;
+    color: #CD2971 ;
     background-color: rgba(92, 223, 129, 0.729);
     text-align: center;
 }
@@ -146,15 +146,19 @@ a {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .tips-container:nth-child(odd){
     flex-direction: row-reverse;
 }
-.tips-container > div, img{
-    flex: 0 0 calc(40% );
+.tips-container > img{
+    width: 70%;
+    height: auto;
 }
 
 .tips-container > div {
+    margin: 0 auto;
+    width: 80%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -186,4 +190,7 @@ footer{
     height: 80vh;
     background-color: rgb(173, 216, 230);
     background: url("/assets/images/therapy2.jpg") no-repeat center center / cover;
+}
+#hook-support-container{
+    left: 60%;
 }
