@@ -3,6 +3,7 @@ but allowing components to change*/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
 }
 
@@ -136,4 +137,32 @@ a {
     color: rgb(125, 62, 17) ;
     background-color: rgba(92, 223, 129, 0.729);
     text-align: center;
+}
+
+/*Tips section*/
+.tips-container{
+    width: 80%;
+    margin:0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.tips-container:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.tips-container > div, img{
+    flex: 0 0 calc(40% );
+}
+
+.tips-container > div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#tips h3{
+    font-size: 2.5rem;
+    color: green;
 }
