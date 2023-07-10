@@ -14,11 +14,28 @@ html {
 }
 
 /*Globals*/
-figure {
+
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: large;
+    padding: 10px;
+}
+
+ul {
     margin: 0;
     padding: 0;
 }
-
+li {
+    list-style: none;
+}
 a {
     text-decoration: none;
     font-size: 2rem;
@@ -26,16 +43,11 @@ a {
     color: black;
 }
 
-li {
-    list-style: none;
-}
-
 /*Navegation and logo*/
 
 #nav-container {
     padding: 10px;
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: rgb(92, 190, 223);
@@ -48,12 +60,18 @@ li {
 }
 
 #nav-container > ul {
-    width: 50%;
+    margin-right: 40px;
+    width:40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
+
+#nav-container > ul > li:hover a{
+    color:yellow;
+    border-bottom: 1px solid yellow;
+}
+
 
 /*Header section*/
 #header-container {
@@ -61,14 +79,23 @@ li {
     height: 80vh;
     background-color: rgb(173, 216, 230);
     background: url("/assets/images/background-1.jpg") no-repeat center top / cover;
-    
 }
 
 #header-container > div{
+    display: flex;
+    flex-direction: column;
     position: relative;
     left: 20%;
     top: 30%;
-    width: 400px;
+    width: 500px;
     height: 400px;
-    background-color: rgba(128, 128, 128, .5);
+    background-color: rgba(92, 190, 223, .5);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#header-container > div > h1{
+    color: rgb(125, 62, 17);
 }
