@@ -120,10 +120,20 @@ a {
     width: 300px;
     background-color: blanchedalmond;
     border-radius: 20px;
+    line-height: 2.5rem;
 }
 .general-button:hover{
     transform: scale(1.1);
 }
 .general-button a{
     display: block;
+}
+
+/*First steps section*/
+#first-steps-container{
+    width: 100%;
+    padding: 20px;
+    color: rgb(125, 62, 17) ;
+    background-color: rgba(92, 223, 129, 0.729);
+    text-align: center;
 }
