@@ -1,196 +1,242 @@
 /* apply a natural box layout model to all elements,
 but allowing components to change*/
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
-    margin: 0;
+  box-sizing: inherit;
+  margin: 0;
 }
 
 /*Globals*/
 
-h1{
-    font-size: 2.5rem;
-    color: #CD2971;
+h1 {
+  font-size: 2.5rem;
+  color: #cd2971;
 }
-h2{
-    font-size: 2.8rem;
+h2 {
+  font-size: 2.8rem;
 }
-h3{
-    font-size: 2rem;
+h3 {
+  font-size: 2rem;
 }
-p{
-    font-size: large;
-    padding: 10px;
+p {
+  font-size: large;
+  padding: 10px;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 400;
-    color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*Navegation and logo*/
 
 #nav-container {
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(92, 223, 129, 0.729);
-
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(92, 223, 129, 0.729);
 }
 
 #logo {
-    width: 100px;
-    cursor: pointer;
+  width: 100px;
+  cursor: pointer;
 }
 
 #nav-container > ul {
-    margin-right: 40px;
-    width:40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-right: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
-#nav-container > ul > li:hover a{
-    color:#CD2971;
-    border-bottom: 1px solid yellow;
+#nav-container > ul > li:hover a {
+  color: #cd2971;
 }
-
+/*Responsive design navegation*/
+@media (max-width: 768px) {
+  #nav-container {
+    gap: 20px;
+  }
+  #nav-container > ul {
+    margin-right: 10px;
+    width: 100%;
+  }
+}
 
 /*Header section*/
 #header-container {
-    width: 100%;
-    height: 75vh;
-    background-color:#CD2971;
-    background: url("/assets/images/background-3.jpg") no-repeat right top / cover;
+  width: 100%;
+  height: 75vh;
+  background-color: #cd2971;
+  background: url("/assets/images/background-3.jpg") no-repeat right top / cover;
 }
 
-#hook-container, #hook-support-container{
-    width: 400px;
-    padding: 20px;
-    position: relative;
-    left: 20%;
-    top: 20%; 
-    background-color: rgba(92, 223, 129, .5);
-    border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    animation: 5s hook-zoom forwards;  
+#hook-container,
+#hook-support-container {
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  left: 20%;
+  top: 20%;
+  background-color: rgba(92, 223, 129, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  animation: 5s hook-zoom forwards;
 }
-#hook-container p, #hook-support-container p{
-    font-size: 1.5rem;
+#hook-container p,
+#hook-support-container p {
+  font-size: 1.5rem;
 }
 
 /*animation for content header*/
 @keyframes hook-zoom {
-    from {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1);
+  }
 
-    to {
-        transform: scale(1.1);
-    }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 /*button header content*/
-.general-button{
-    margin: 0 auto;
-    width: 300px;
-    background-color: blanchedalmond;
-    border-radius: 10px;
-    line-height: 2.5rem;
+.general-button {
+  margin: 0 auto;
+  width: 80%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  line-height: 2.5rem;
 }
-.general-button:hover{
-    transform: scale(1.1);
+.general-button:hover {
+  transform: scale(1.1);
 }
-.general-button a{
-    display: block;
-    font-size: 1rem;
+.general-button a {
+  display: block;
+  font-size: 1rem;
+}
+
+/*Responsive design header content*/
+@media (max-width: 768px) {
+  #header-container,
+  #header-support-container {
+    display: grid;
+    place-items: center;
+  }
+  #hook-container,
+  #hook-support-container {
+    position: static;
+  }
+}
+@media (max-width: 480px) {
+  #hook-container,
+  #hook-support-container {
+    width: 80%;
+  }
 }
 
 /*First steps section*/
-#first-steps-container{
-    width: 100%;
-    padding: 20px;
-    color: #CD2971 ;
-    background-color: rgba(92, 223, 129, 0.729);
-    text-align: center;
+#first-steps-container {
+  width: 100%;
+  padding: 20px;
+  color: #cd2971;
+  background-color: rgba(92, 223, 129, 0.729);
+  text-align: center;
 }
 
 /*Tips section*/
-.tips-container{
-    width: 80%;
-    margin:0 auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.tips-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
-.tips-container:nth-child(odd){
-    flex-direction: row-reverse;
-}
-.tips-container > img{
-    width: 70%;
-    height: auto;
+.tips-container:nth-child(odd) {
+  flex-direction: row-reverse;
 }
 
-.tips-container > div {
-    margin: 0 auto;
-    width: 80%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
+.tips{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
 }
 
-#tips h3{
-    font-size: 2.5rem;
-    color: green;
+.tips h3 {
+  font-size: 2.5rem;
+  color: green;
 }
-#tips > ul > li {
-    font-size: 1.9rem;
-    list-style: disc;
+.tips > ul > li {
+  font-size: 1.9rem;
+  list-style: disc;
 }
 
+@media (max-width:768px){
+  .tips-container {
+    display: block;
+  
+  }
+}
+@media (max-width:480px){
+  .tips-container {
+    width: 100%;
+  
+  }
+  .tips{
+    width: 100%;
+  }
+  .tips > ul > li {
+    font-size: 1.5rem;
+    list-style: none;
+  }
+}
 /*Footer*/
 
-footer{
-    margin-top: 20px;
-    width: 100%;
-    height: 80px;
-    background-color: rgba(92, 223, 129, 0.729);
+footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(92, 223, 129, 0.729);
 }
+
 
 /*Support page style*/
 #header-support-container {
-    width: 100%;
-    height: 80vh;
-    background-color: rgb(173, 216, 230);
-    background: url("/assets/images/therapy2.jpg") no-repeat center center / cover;
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(173, 216, 230);
+  background: url("/assets/images/therapy2.jpg") no-repeat center center / cover;
 }
-#hook-support-container{
-    left: 60%;
+#hook-support-container {
+  left: 60%;
 }
