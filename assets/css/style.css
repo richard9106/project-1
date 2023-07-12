@@ -16,8 +16,9 @@ html {
 /*Globals*/
 
 h1 {
-  font-size: 2.5rem;
-  color: #cd2971;
+  color: #9c460c;
+  text-shadow: 3px 4px 3px rgb(0, 0, 0);
+  font-size: 3em;
 }
 h2 {
   font-size: 2.8rem;
