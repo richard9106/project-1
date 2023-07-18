@@ -12,22 +12,27 @@ html {
   box-sizing: inherit;
   margin: 0;
 }
+/*Fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Raleway:wght@500&display=swap');
 
 /*Globals*/
 
-h1 {
+h1,#hook-support-container h2 {
   color: #9c460c;
   text-shadow: 3px 4px 3px rgb(255, 255, 255);
   font-size: 3em;
   margin: 0;
+  font-family: 'Fira Sans', sans-serif;
 }
 h2 {
+  font-family: 'Fira Sans', sans-serif;
   font-size: 2.8rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 p {
+  text-align: justify;
   font-size: large;
   padding: 10px;
 }
@@ -79,14 +84,20 @@ img {
 #nav-container > ul > li:hover a {
   color: #cd2971;
 }
+
 /*Responsive design navegation*/
-@media (max-width: 768px) {
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 768px
+*/
+@media (min-width: 481px) and (max-width: 768px) {
   #nav-container {
     gap: 20px;
   }
   #nav-container > ul {
-    margin-right: 10px;
     width: 100%;
+    justify-content: right;
+    gap: 20px;
   }
 }
 
@@ -98,6 +109,7 @@ img {
   background: url("../images/background-3.jpg") no-repeat right top / cover;
 }
 
+/*Content inside the header for all pages*/
 #hook-container,
 #hook-support-container {
   width: 400px;
@@ -115,6 +127,7 @@ img {
 #hook-support-container p {
   font-size: 1.5rem;
 }
+
 
 /*animation for content header*/
 @keyframes hook-zoom {
@@ -143,7 +156,10 @@ img {
   font-size: 1rem;
 }
 
-/*Responsive design header content*/
+/*HEADER
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
 @media (max-width: 768px) {
   #header-container,
   #header-support-container {
@@ -155,14 +171,56 @@ img {
     position: static;
   }
 }
+/* HEADER
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 @media (max-width: 480px) {
   #hook-container,
   #hook-support-container {
     width: 80%;
   }
 }
+/*About section*/
+#about-container{
+  height: 40vh;
+  display: flex;
+  flex-direction: row-reverse;
 
-/*First steps section*/
+}
+#about-container div{
+  padding: 20px;
+  flex: 0 0 calc(50% - 10px);
+}
+#about-container div:first-child {
+  display: grid;
+  background: url(../images/fondo-4.png) no-repeat center center / cover;
+  place-items: center;
+  
+
+}
+#about-container div:first-child p {
+  font-size: 6rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: #cd2971;
+}
+#about-container div:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+#about-container div:last-child h3{
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/*First steps section contains tips and images of every tip*/
 #first-steps-container {
   width: 100%;
   padding: 20px;
@@ -183,6 +241,9 @@ img {
 .tips-container:nth-child(odd) {
   flex-direction: row-reverse;
 }
+.tips-container img{
+  width: 50%;
+}
 
 .tips{
   margin: 0 auto;
@@ -199,14 +260,20 @@ img {
   color: green;
 }
 .tips > ul > li {
+  text-align: left;
   font-size: 1.9rem;
   list-style: disc;
+
 }
 
 @media (max-width:768px){
   .tips-container {
     display: block;
   
+  }
+  .tips-container img{
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width:480px){
@@ -227,9 +294,9 @@ img {
 footer {
   display: flex;
   width: 100%;
-  height: 80px;
   background-color: rgba(92, 223, 129, 0.729);
   align-items: center;
+  padding: 20px;
 }
 
 #social-media-container{
@@ -242,7 +309,8 @@ footer {
   color: white;
 }
 /*Responsive design for footer*/
-@media (max-width:480px){
+
+@media (max-width:768px){
   footer{
     display: block;
     text-align: center;
