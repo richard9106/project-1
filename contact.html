@@ -28,29 +28,32 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="support.html">Parent Support</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
 
     <header id="header-container-contact">
       
+      <!--CONTACT FORM -->
       <div id="form-container">
+
         <form action="someemail@gmail.com" method="post">
           <label for="fname">First Name </label>
-          <input type="text" name="fname" id="first-name" />
+          <input type="text" name="fname" id="first-name" required/>
           <label for="lname">Last Name </label>
-          <input type="text" name="fname" id="last-name" />
+          <input type="text" name="fname" id="last-name" required />
           <label for="email">Email Address </label>
-          <input type="email" name="email" id="email-address"/>
-          <textarea name="mensage" id="" cols="30" rows="10"></textarea>
+          <input type="email" name="email" id="email-address" required/>
+          <textarea name="mensage" id="" cols="30" rows="10" required></textarea>
           <div id="buttons-contact-container">
-            <input type="button" value="SEND"/>
-            <input type="button" value="RESET"/>  
+            <input type="submit"  value="SEND"/>
+            <input type="reset" value="RESET"/>  
           </div>
           
         </form>
-
-        <div>
+        <!--CONTACT INFORMATION -->
+        <div id="contact-info-container">
           <h3>Title contac</h3>
           <p>correo2@@</p>
           <p>Numero</p>

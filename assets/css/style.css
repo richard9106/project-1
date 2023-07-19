@@ -1,37 +1,46 @@
-/* apply a natural box layout model to all elements,
-but allowing components to change*/
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+
+:root{
+  --fondo:rgb(246, 244, 243);
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */    
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /*Fonts from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Raleway:wght@500&display=swap');
 
 /*Globals*/
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--fondo);
+}
 
-h1,#hook-support-container h2 {
+
+h1, h2 , h3 {
+  margin: 0;
   color: #9c460c;
   text-shadow: 3px 4px 3px rgb(255, 255, 255);
-  font-size: 3em;
-  margin: 0;
   font-family: 'Fira Sans', sans-serif;
 }
 h2 {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 2.8rem;
+  font-size: 30px;
 }
-h3 {
-  font-size: 2.5rem;
+h3{
+  font-size: 25px;
 }
 p {
+  margin: 0;
   text-align: justify;
   font-size: large;
   padding: 10px;
@@ -45,8 +54,9 @@ li {
   list-style: none;
 }
 a {
+  font-family: 'Fira Sans', sans-serif;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 400;
   color: black;
 }
@@ -60,11 +70,11 @@ img {
 /*Navegation and logo*/
 
 #nav-container {
-  padding: 10px;
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(92, 223, 129, 0.729);
+  border-bottom: 1px black solid;
 }
 
 #logo {
@@ -78,56 +88,37 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 
 #nav-container > ul > li:hover a {
   color: #cd2971;
 }
 
-/*Responsive design navegation*/
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 768px
-*/
-@media (min-width: 481px) and (max-width: 768px) {
-  #nav-container {
-    gap: 20px;
-  }
-  #nav-container > ul {
-    width: 100%;
-    justify-content: right;
-    gap: 20px;
-  }
-}
+
+
 
 /*Header section*/
 #header-container {
-  width: 100%;
-  height: 75vh;
+  display: grid;
+  place-items: center;
+  margin: 10px auto;
+  width: 70%;
+  height: 60vh;
+  padding: 20px;
   background-color: #cd2971;
-  background: url("../images/background-3.jpg") no-repeat right top / cover;
+  background: url("../images/background-3.jpg") no-repeat top right / cover;
 }
 
 /*Content inside the header for all pages*/
-#hook-container,
-#hook-support-container {
-  width: 400px;
+#hook-container {
+  width: 300px;
   padding: 10px;
-  position: relative;
-  left: 20%;
-  top: 20%;
-  background-color: rgba(92, 223, 129, 0.5);
-  border-radius: 20px;
+  background-color:rgba(246, 244, 243, .6);
+  border-radius: 10px;
   text-align: center;
   justify-content: center;
   animation: 5s hook-zoom forwards;
 }
-#hook-container p,
-#hook-support-container p {
-  font-size: 1.5rem;
-}
-
 
 /*animation for content header*/
 @keyframes hook-zoom {
@@ -143,208 +134,143 @@ img {
 /*button header content*/
 .general-button {
   margin: 0 auto;
+  padding: 10px;
   width: 80%;
   background-color: blanchedalmond;
   border-radius: 10px;
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
 }
-.general-button:hover {
+.general-button:hover{
   transform: scale(1.1);
+  background-color: #9c460c;
+  color: white;
 }
 .general-button a {
   display: block;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
-/*HEADER
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (max-width: 768px) {
-  #header-container,
-  #header-support-container, {
-    display: grid;
-    place-items: center;
-  }
-  #hook-container,
-  #hook-support-container {
-    position: static;
-  }
-}
-/* HEADER
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-@media (max-width: 480px) {
-  #hook-container,
-  #hook-support-container {
-    width: 80%;
-  }
-}
-/*About section*/
-#about-container{
-  height: 40vh;
-  display: flex;
-  flex-direction: row-reverse;
-
-}
-#about-container div{
-  padding: 20px;
-  flex: 0 0 calc(50% - 10px);
-}
-#about-container div:first-child {
-  display: grid;
-  background: url(../images/fondo-4.png) no-repeat center center / cover;
-  place-items: center;
-  
-
-}
-#about-container div:first-child p {
-  font-size: 6rem;
-  font-family: 'Fira Sans', sans-serif;
-  color: #cd2971;
-}
-#about-container div:last-child{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-}
-
-#about-container div:last-child h3{
-  margin: 10px 0;
+/*Services section*/
+#services-container{
+  margin-bottom: 10px;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  display: flex;
 }
+#content-services > h3{
+  margin: 0;
+  font-size:30px;
+  color: #9c460c;
+}
+#content-services > p{
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
 
-
-
+}
+#side-image-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.img-container{
+  /* width: 200px; */
+  width: 200px;
+  height: 200px;
+  flex: 0.5 1 200px;
+}
 
 /*First steps section contains tips and images of every tip*/
 #first-steps-container {
   width: 100%;
-  padding: 20px;
-  color: #cd2971;
-  background-color: rgba(92, 223, 129, 0.729);
+  color:#9c460c;
+  font-size: 30px;
   text-align: center;
+  border-top: 1px solid rgb(241, 193, 169);
+}
+#first-steps-container h2{
+  margin: 20px 0;
 }
 
 /*Tips section*/
-.tips-container {
-  width: 80%;
-  margin: 0 auto 10px;
-  padding-top: 20px;
+.tips-container{
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
 }
-.tips-container:nth-child(odd) {
-  flex-direction: row-reverse;
+#image-tips{
+  text-align: center;
+  width: 80% !important;
+  height: 80% !important;
 }
-.tips-container img{
-  width: 50%;
-}
-
 .tips{
   margin: 0 auto;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
-.tips h3 {
-  font-size: 2.5rem;
-  color: green;
-}
-.tips > ul > li {
-  text-align: left;
-  font-size: 1.9rem;
-  list-style: disc;
-
-}
-
-@media (max-width:768px){
-  .tips-container {
-    display: block;
-  
-  }
-  .tips-container img{
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (max-width:480px){
-  .tips-container {
-    width: 100%;
-  
-  }
-  .tips{
-    width: 100%;
-  }
-  .tips > ul > li {
-    font-size: 1.5rem;
-    list-style: none;
-  }
-}
 /*Footer*/
 
 footer {
   display: flex;
-  width: 100%;
-  background-color: rgba(92, 223, 129, 0.729);
-  align-items: center;
-  padding: 20px;
+  background-color: blanchedalmond;
 }
 
+footer div, footer p{
+  flex: 0 0 calc(50% - 10px);
+}
 #social-media-container{
-  margin: 0 auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
+
 #social-media-container a{
-  margin-right:20px ;
+  margin-right: 20px;
 }
+
 #social-media-container a:hover{
   color: white;
 }
-/*Responsive design for footer*/
 
-@media (max-width:768px){
-  footer{
-    display: block;
-    text-align: center;
-  }
-}
 
 
 /*Support page style*/
 #header-support-container {
-  width: 100%;
-  height: 80vh;
-  background-color: rgb(173, 216, 230);
+  display: grid;
+  place-items: center;
+  margin: 10px auto;
+  width: 70%;
+  height: 60vh;
+  padding: 20px;
+  background-color: #cd2971;
   background: url("../images/therapy2.jpg") no-repeat center center / cover;
 }
 #hook-support-container {
-  left: 60%;
+  width: 500px;
+  padding: 10px;
+  background-color:rgba(246, 244, 243, .6);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  animation: 5s hook-zoom forwards;
+}
+#hook-support-container h2{
+  font-size: 30px;
+  margin: 0;
 }
 
 
 /*contact page HEADER*/
 #header-container-contact{
+  display: grid;
   width: 100%;
   height: 80vh;
   background-color: rgb(173, 216, 230);
   background: url("../images/therapy2.jpg") no-repeat center center / cover;
+  place-items: center;
 }
 
 #form-container{
+  width: 80%;
   display: flex;
-  position: relative;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50vh;
   background: rgba(92, 223, 129, 0.4);
   padding: 20px;
 }
