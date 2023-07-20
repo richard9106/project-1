@@ -93,7 +93,7 @@ img {
 
 #nav-container > ul > li:hover a {
   color:white;
-  text-shadow:2px 3px 3px black;
+  text-shadow:2px 3px 3px #9c460c;
 }
 
 
@@ -158,11 +158,7 @@ img {
   text-align: center;
   display: flex;
 }
-#content-services > h3{
-  margin: 0;
-  font-size:30px;
-  color: #9c460c;
-}
+
 #content-services > p{
   margin: 0 auto;
   width: 80%;
@@ -215,7 +211,7 @@ img {
 }
 
 
-/*Footer*/
+/*FOOTER STYLE*/
 
 footer {
   clear: both;
@@ -239,7 +235,7 @@ footer div, footer p{
 #social-media-container a:hover{
   color: white;
 }
-
+/*END FOOTER*/
 
 
 /*SUPPORT PAGE STYLE*/
@@ -274,7 +270,6 @@ footer div, footer p{
   text-align: center;
   font-size: 40px;
 }
-
 
 /*Therapist section contains foto of the person and info*/
 #therapist-container{
@@ -324,6 +319,30 @@ footer div, footer p{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/*END SUPPORT PAGE STYLE*/
+
+/*ABOUT PAGE STYLE*/
+#about-container{
+  margin-top:20px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-container > div:last-child{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  background-color:#cccccc84 ;
+  justify-content: center;
+  
+}
+#about-container > div > p {
+  text-align: justify;
+}
+
+/*END ABPUT PAGE STYLE*/
 
 /*CONTACT PAGE STYLE*/
 /*contact page HEADER*/
