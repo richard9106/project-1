@@ -37,28 +37,34 @@
       
       <!--CONTACT FORM -->
       <div id="form-container">
-
+        <!--CONTACT INFORMATION -->
+        <div id="contact-info-container">
+          <h3>Contact Us!</h3>
+          <p>Please fill out the form below to send us an email or also you can contact us whit the information below.</p>
+          <p>Phone:+1 665-542-4586</p>
+          <p>Address:ThatRoad 54 Houston, TXT.</p>
+        </div>
+        <!--Form for contact or send content-->
         <form action="someemail@gmail.com" method="post">
           <label for="fname">First Name </label>
-          <input type="text" name="fname" id="first-name" required/>
+          <input type="text" name="fname" placeholder="Your name .." id="first-name" required/>
           <label for="lname">Last Name </label>
-          <input type="text" name="fname" id="last-name" required />
+          <input type="text" name="fname" placeholder="Your last name .." id="last-name" required />
           <label for="email">Email Address </label>
-          <input type="email" name="email" id="email-address" required/>
+          <input type="email" name="email" placeholder="Your name Email.." id="email-address" required/>
+          <label for="subject">Subject</label>
+          <select>
+            <option value="information">Information</option>
+            <option value="Just say Hi!">Just say Hi!</option>
+            <option value="Sen your tips">Send your tips</option>
+            <option value="Work with us">Work with us</option>
+          </select>
           <textarea name="mensage" id="" cols="30" rows="10" required></textarea>
           <div id="buttons-contact-container">
             <input type="submit"  value="SEND"/>
             <input type="reset" value="RESET"/>  
           </div>
-          
         </form>
-        <!--CONTACT INFORMATION -->
-        <div id="contact-info-container">
-          <h3>Title contac</h3>
-          <p>correo2@@</p>
-          <p>Numero</p>
-          <p>address</p>
-        </div>
       </div>
      
     </header>

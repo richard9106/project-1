@@ -28,7 +28,7 @@ body{
 
 
 h1, h2 , h3 {
-  margin: 0;
+  margin: 10px;
   color: #9c460c;
   text-shadow: 3px 4px 3px rgb(255, 255, 255);
   font-family: 'Fira Sans', sans-serif;
@@ -51,7 +51,8 @@ ul {
   padding: 0;
 }
 li {
-  list-style: none;
+  font-size: large;
+  list-style:none;
 }
 a {
   font-family: 'Fira Sans', sans-serif;
@@ -91,7 +92,8 @@ img {
 }
 
 #nav-container > ul > li:hover a {
-  color: #cd2971;
+  color:white;
+  text-shadow:2px 3px 3px black;
 }
 
 
@@ -173,7 +175,6 @@ img {
   gap: 10px;
 }
 .img-container{
-  /* width: 200px; */
   width: 200px;
   height: 200px;
   flex: 0.5 1 200px;
@@ -188,27 +189,36 @@ img {
   border-top: 1px solid rgb(241, 193, 169);
 }
 #first-steps-container h2{
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 /*Tips section*/
 .tips-container{
   display: flex;
-}
-#image-tips{
-  text-align: center;
-  width: 80% !important;
-  height: 80% !important;
+  justify-content: space-between;
 }
 .tips{
+  padding: 20px;
+  margin: 0 auto;
+  width: 70%;
+}
+.img-tips{
+  width: 70%;
+}
+.tips > ul{
   margin: 0 auto;
   width: 80%;
-  text-align: justify;
+
 }
+.tips > ul > li{
+  list-style: decimal;
+}
+
 
 /*Footer*/
 
 footer {
+  clear: both;
   display: flex;
   background-color: blanchedalmond;
 }
@@ -232,7 +242,8 @@ footer div, footer p{
 
 
 
-/*Support page style*/
+/*SUPPORT PAGE STYLE*/
+/*HEADER*/
 #header-support-container {
   display: grid;
   place-items: center;
@@ -252,35 +263,132 @@ footer div, footer p{
   justify-content: center;
   animation: 5s hook-zoom forwards;
 }
-#hook-support-container h2{
-  font-size: 30px;
-  margin: 0;
+
+#resource-container{
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #9c460c;
+}
+
+#resource-container h3{
+  text-align: center;
+  font-size: 40px;
 }
 
 
+/*Therapist section contains foto of the person and info*/
+#therapist-container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container {
+  flex: 1 1 200px;
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*CONTACT PAGE STYLE*/
 /*contact page HEADER*/
 #header-container-contact{
+  margin-top: 20px;
   display: grid;
   width: 100%;
-  height: 80vh;
-  background-color: rgb(173, 216, 230);
-  background: url("../images/therapy2.jpg") no-repeat center center / cover;
   place-items: center;
 }
 
+/*Contact form style and Contact information style*/
+#contact-info-container{
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  background-color: #cccccc84;
+}
+
+
+/*FORM*/
 #form-container{
   width: 80%;
   display: flex;
-  background: rgba(92, 223, 129, 0.4);
   padding: 20px;
 }
 #form-container form,div{
   flex: 0 0 calc(50% - 10px);
 }
-#form-container form >label,input{
-  display: block;
-  margin: 10px 0;
-}
 #buttons-contact-container{
   display:flex;
+}
+label,option{
+  font-size: 15px;
+  color: #9c460c;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=email] , select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit and reset button with a specific background color etc */
+input[type=submit],input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset]{
+  background-color: red;
+  margin-left:20px ;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #85bd88;
+}
+input[type=reset]:hover{
+  background-color: rgb(206, 112, 112);
 }
