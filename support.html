@@ -17,21 +17,24 @@
 
   <body>
       <!-- Navegation menu -->
-    <nav id="nav-container">
-      <a href="index.html">
-        <img
-          src="./assets/images/logo-1.png"
-          alt="A family whit two babys"
-          id="logo"
-        />
-      </a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="support.html">Parent Support</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+      <nav id="nav-container">
+        <a href="index.html">
+          <img
+            src="./assets/images/logo-1.png"
+            alt="A family whit two babys"
+            id="logo"
+          />
+        </a>
+        <ul class="topnav" id="myTopnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Parent Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
 <!--header with the H1 content for google search-->
     <header id="header-support-container">
       <div id="hook-support-container">
@@ -98,5 +101,7 @@
       src="https://kit.fontawesome.com/338579d9e0.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./assets/js/menu.js"></script>
   </body>
 </html>
