@@ -1,41 +1,123 @@
+#Richard Marles Portafolio Web Site
+## HTML/CSS Essentials Project
+
+imagenn de la pagina en diferentes dispositivos
+
 ![Hacks for new parents logo](/assets/images/logo-1.png)
 
-Welcome to HacksFNP,
+Welcome to HacksFNP.
 
-This web site will help people how want's be a parent o it's in the prosses
- .The last update to this file was: **Jul 07th, 2023**
+FNP Hacks (For New Parents) is a website that helps people who are going to be parents for the first time, as we understand that it can be very difficult.
 
-## images are from
-
-https://www.istockphoto.com/
+FNP Hacks we gather the experience not only of ourselves as parents but also of all people since we all go through the same situations or challenges.
 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+MENU PARA VER LA INFORMACION
+[Goal](#website-owner-business-goals)
 
-`python3 -m http.server`
+## Website owner business goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## User goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## User experiences
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Surface (colores , imagenes y fuentes)
+    
+    ## images are from
+    https://www.istockphoto.com/
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Structure of the website -- wireframe --
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Features
 
-To log into the Heroku toolbelt CLI:
+The website consists of 6 pages. Four are accessible from a navigation menu.
+One is a 404 error page and one is a submission confirmation page for a form.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The website has below features:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Navigation bar
 
----
+* #### Navigation bar is visible on the top of each website. It is responsive and will adapt to mobile devices by a change into a burger menu.
 
-Happy coding!
+* Navigation scheme:
+
+    * On left side there is a logo. It can be used as navigation link to the main page.
+    * On right side there are four links or burger menu. It contains:
+        * Home
+        * Parent Support 
+        * About me
+        * Contact
+
+## Footer
+
+* Footer is consistent on all pages. It has contact details on left side and social links on right side.
+Each link will open in a separate tab in a browser.
+
+## Home
+
+* ### Header section
+
+    * Header includes an image as a backgrpund and a box at the side with information and a buttom with internal link to the tips
+    section.
+    This section is consistent only in Home and Soport page.
+
+* ### Services section
+
+    * Services section contains information about how we work and how can we help people, just short description.
+
+* ### Typs section
+
+    * Typs section contains advices to keep in mind when you are a parent for the first time.
+
+## Suppot
+
+* Parent Support gives information about therapist and resources like a web site with info about it.
+
+## About me
+
+* About me gives information about Hacks for new parents like mission and goals.
+
+## Contact
+
+* Contact form is a main part on this site. User can contact by filling a form or send us an email directly or call if you wish.
+
+
+##  Future implementations --
+
+* Create diet coach offer.
+* Add new site with class descriptions.
+* A blog site with fitness advises.
+* Login site for paid content including videos, meals ideas and recipes.
+--
+
+[Back to Table of contents](#table-of-contents)
+___
+# Technologies used
+
+### HTML5
+* As a structure language.
+
+### CSS
+* As a style language.
+
+### Font Awesome
+* As an icon library for a social links.
+
+### Google fonts
+* As a font resource.
+
+### GitHub
+* As a software hosting platform to keep project in a remote location.
+
+### Git
+* As a version-control system tracking.
+
+### Wireframe.cc
+* As a wireframing tool.
+
+### GNU Image Manipulation Program [GIMP]
+* As an image editor.
+
+
+## Issues found during site development --
