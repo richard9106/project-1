@@ -351,6 +351,7 @@ footer div, footer p{
 }
 /*END FOOTER*/
 
+/*--------------------------*/
 
 /*SUPPORT PAGE STYLE*/
 /*HEADER*/
@@ -391,7 +392,7 @@ footer div, footer p{
   ##Screen = B/w 480px to 768px 
 */
 
-@media screen and (max-width:7680px){
+@media screen and (max-width:768px){
   #header-support-container{
     width: 100%;
   }
@@ -407,7 +408,6 @@ footer div, footer p{
 
 }
 /*END RESPONSIVE HEADER SUPPORT PAGE*/
-
 
 /*Therapist section contains foto of the person and info*/
 #therapist-container{
@@ -459,9 +459,17 @@ footer div, footer p{
 }
 /*END SUPPORT PAGE STYLE*/
 
+/*--------------------------*/
+
 /*ABOUT PAGE STYLE*/
+#body-about{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 #about-container{
-  margin-top:20px ;
+  width: 80%;
+  margin:20px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -479,8 +487,37 @@ footer div, footer p{
 #about-container > div > p {
   text-align: justify;
 }
+#img-about{
+  display: none;
+}
 
+#footer-about{
+  margin-top: auto;
+}
+/*RESPONSIVE DESIGN ABOUT*/
+/* 
+  ##Device = MOBILES
+  ##Screen = B/w 480px to 768px 
+*/
+
+@media screen and (max-width:768px){
+  #about-container{
+    width: 90%;
+  }
+  #img-about{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  #about-container > div:first-child{
+    display: none;
+  }
+  
+}
+/*END RESPONSIVE DESIGN ABOUT PAGE*/
 /*END ABPUT PAGE STYLE*/
+
+/*--------------------------*/
 
 /*CONTACT PAGE STYLE*/
 /*contact page HEADER*/
