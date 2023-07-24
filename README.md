@@ -14,6 +14,7 @@ FNP Hacks we gather the experience not only of ourselves as parents but also of 
 
 MENU PARA VER LA INFORMACION
 [Goal](#website-owner-business-goals)
+[Surface](#surface-colores--imagenes-y-fuentes)
 
 ## Website owner business goals
 
@@ -23,9 +24,21 @@ MENU PARA VER LA INFORMACION
 
 
 ## Surface (colores , imagenes y fuentes)
+  * # fonts from Googlefonts
+      *Fira-sans.
+      *Raleway
+
+
+  * #colors
+    backgrpund color body:rgb(246, 244, 243)
+    titles and subtitles:#9c460c.
+    paragraphs: black. 
+    background links:blanchedalmond.
+    others:white, rgba(246, 244, 243, .6), #cd2971, 
     
-    ## images are from
-    https://www.istockphoto.com/
+  * # images are from.
+       https://www.istockphoto.com/
+       https://unsplash.com/
 
 ### Structure of the website -- wireframe --
 
@@ -83,13 +96,11 @@ Each link will open in a separate tab in a browser.
 * Contact form is a main part on this site. User can contact by filling a form or send us an email directly or call if you wish.
 
 
-##  Future implementations --
+##  Future implementations
 
-* Create diet coach offer.
-* Add new site with class descriptions.
-* A blog site with fitness advises.
-* Login site for paid content including videos, meals ideas and recipes.
---
+* Create iteractive chat for problem resolve.
+* Add new site whit therapists schedule so you can contact them.
+* Login site for paid content including videos, how to do content.
 
 [Back to Table of contents](#table-of-contents)
 ___
