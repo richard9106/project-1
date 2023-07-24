@@ -358,14 +358,14 @@ footer div, footer p{
   display: grid;
   place-items: center;
   margin: 10px auto;
-  width: 70%;
+  width: 80%;
   height: 60vh;
   padding: 20px;
   background-color: #cd2971;
   background: url("../images/therapy2.jpg") no-repeat center center / cover;
 }
-#hook-support-container {
-  width: 500px;
+#hook-support-container{
+  width: 400px;
   padding: 10px;
   background-color:rgba(246, 244, 243, .6);
   border-radius: 10px;
@@ -385,6 +385,30 @@ footer div, footer p{
   font-size: 40px;
 }
 
+/*RESPONSIVE HEADER SUPPORT PAGE*/
+/* 
+  ##Device = MOBILES
+  ##Screen = B/w 480px to 768px 
+*/
+
+@media screen and (max-width:7680px){
+  #header-support-container{
+    width: 100%;
+  }
+  #resource-container{
+    width: 80%;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width:480px){
+  #header-support-container{
+    width: 100%;
+  }
+
+}
+/*END RESPONSIVE HEADER SUPPORT PAGE*/
+
+
 /*Therapist section contains foto of the person and info*/
 #therapist-container{
   display: flex;
@@ -392,7 +416,7 @@ footer div, footer p{
   flex-wrap: wrap;
   gap: 10px;
 }
-
+/*CONTAINER WITH ANIMATION FOR THERAPIST VIEW*/
 .container {
   flex: 1 1 200px;
   position: relative;
@@ -421,7 +445,7 @@ footer div, footer p{
   bottom: 0;
   height: 100%;
 }
-
+/*Info abou the therapis*/
 .text {
   color: white;
   font-size: 20px;
