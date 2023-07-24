@@ -521,8 +521,14 @@ footer div, footer p{
 
 /*CONTACT PAGE STYLE*/
 /*contact page HEADER*/
+#body-contact{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
 #header-container-contact{
-  margin-top: 20px;
+  margin: 20px auto;
   display: grid;
   width: 100%;
   place-items: center;
@@ -585,4 +591,31 @@ input[type=submit]:hover {
 }
 input[type=reset]:hover{
   background-color: rgb(206, 112, 112);
+}
+
+#footer-contact{
+  margin-top: auto;  
+}
+/*RESPONSIVE STYLE CONTACT PAGE*/
+/* 
+  ##Device = MOBILES
+  ##Screen = B/w 480px to 768px 
+*/
+
+@media screen and (max-width:768px){
+  #from-container,#header-container-contact{
+    width: 95%;
+  }  
+  
+}
+@media screen and (max-width:480px){
+  #form-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+  }  
+  #contact-info-container{
+    width: 100%;
+  }
 }
