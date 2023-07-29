@@ -574,7 +574,7 @@ input[type=text],input[type=email] , select, textarea {
 
 /* Style the submit and reset button with a specific background color etc */
 input[type=submit],input[type=reset] {
-  background-color: #04AA6D;
+  background-color: #1f5e47;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -588,11 +588,11 @@ input[type=reset]{
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: white;
-  color: #286b2c;
+  color: #00ff11;
 }
 input[type=reset]:hover{
   background-color:white;
-  color: rgb(159, 2, 2);
+  color: rgb(255, 0, 0);
 }
 
 #footer-contact{
