@@ -63,7 +63,9 @@ MENU.
        https://www.istockphoto.com/
        https://unsplash.com/
 
-## Structure of the website -- wireframe --
+## Structure of the website
+
+![Hacks for new parents wireframe](/assets/images/wareframe.png)
 
  * # Features
 
@@ -135,6 +137,10 @@ ___
 ### CSS
 * As a style language.
 
+### Java Scrpit
+* As a css interactive leng for buger menu.
+
+
 ### Font Awesome
 * As an icon library for a social links.
 
@@ -147,12 +153,13 @@ ___
 ### Git
 * As a version-control system tracking.
 
-### Wireframe.cc
+### Figma
 * As a wireframing tool.
 
 ### Image Manipulation Program [GIMP]
 * As an image editor.
 
 
-## Issues found during site development --
+## Issues found during site development 
+
 
