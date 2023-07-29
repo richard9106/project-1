@@ -162,6 +162,10 @@ img {
     overflow-x: hidden;
     transition: 0.5s;
   }
+  #logo {
+    width: 70px;
+  }
+  
 }
 /*END NAV RESPONSIVE STYLE*/
 
@@ -234,6 +238,12 @@ img {
     width: 100%;
   }
 }
+@media screen and (max-width:480px){
+  #header-container {
+    height: 80vh;
+    background-position: center center;
+  }
+}
 /*END HEADER RESPONSIVE STYLE */
 
 
@@ -279,6 +289,8 @@ img {
     flex-wrap: wrap;
   }
   .img-container{
+    width: 150px;
+    height: 150px;
     flex: 1 1 200px;
   }
 }
