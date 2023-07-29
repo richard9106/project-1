@@ -587,10 +587,12 @@ input[type=reset]{
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #85bd88;
+  background-color: white;
+  color: #286b2c;
 }
 input[type=reset]:hover{
-  background-color: rgb(206, 112, 112);
+  background-color:white;
+  color: rgb(159, 2, 2);
 }
 
 #footer-contact{
