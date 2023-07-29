@@ -51,11 +51,11 @@
         <!--Form for contact or send content-->
         <form action="./index.php" method="post">
           <label for="fname">First Name </label>
-          <input type="text" name="fname" placeholder="Your name .." id="first-name" required/>
+          <input type="text" name="fname" placeholder="Your name .." id="first-name" aria-labelledby="firstname" required/>
           <label for="lname">Last Name </label>
-          <input type="text" name="fname" placeholder="Your last name .." id="last-name" required />
+          <input type="text" name="fname" placeholder="Your last name .." id="last-name" aria-labelledby="lastname" required />
           <label for="email">Email Address </label>
-          <input type="email" name="email" placeholder="Your name Email.." id="email-address" required/>
+          <input type="email" name="email" placeholder="Your name Email.." id="email-address" aria-labelledby="email-address required/>
           <label for="subject">Subject</label>
           <select>
             <option value="information">Information</option>
@@ -63,10 +63,10 @@
             <option value="Sen your tips">Send your tips</option>
             <option value="Work with us">Work with us</option>
           </select>
-          <textarea name="mensage" id="" cols="30" rows="10" required></textarea>
+          <textarea name="mensage" id="mensage" cols="30" rows="10" required></textarea>
           <div id="buttons-contact-container">
-            <input type="submit"  value="SEND"/>
-            <input type="reset" value="RESET"/>  
+            <input type="submit"  value="SEND" aria-labelledby="sendForm"/>
+            <input type="reset" value="RESET" aria-labelledby="clearForm"/>  
           </div>
         </form>
       </div>
