@@ -175,7 +175,7 @@ img {
   height: 60vh;
   padding: 20px;
   background-color: #cd2971;
-  background: url("../images/background-3.jpg") no-repeat top right / cover;
+  background: url("../images/background-3.webp") no-repeat top right / cover;
 }
 
 /*Content inside the header for all pages*/
