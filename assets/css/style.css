@@ -124,42 +124,48 @@ img {
     width: 90%;
   }
   #nav-container > ul {
-    display: grid;
-    place-items: center;
-    
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #nav-container > ul > li:hover  {
+    color:white;
+    background-color: #9c460c;
   }
   .icon {
     display: block;
   }
   .topnav{
     width: 100%;
-    height: 100%;
-    width: 0;
+    /* height: 100%; */
+    /* width: 0; */
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 52px;
     left: -1000px;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgb(204, 204, 204);
+    background-color: rgba(204, 204, 204, 0.9);
     overflow-x: hidden;
-    justify-content: center;
+    /* justify-content: center; */
     transition: 0.5s;
   } 
   .topnav > li > a{
-    color: white;
+    color: #9c460c;
+    padding: 10px;
   }
 
   .responsive{
+    display: block;
     width: 100%;
-    height: 100%;
-    width: 0;
+    /* height: 100%; */
+    /* width: 0; */
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 52px;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
+    background-color: rgb(204, 204, 204);
+    background-color: rgba(204, 204, 204, 0.9);
+    /* overflow-x: hidden; */
     transition: 0.5s;
   }
   #logo {
@@ -243,6 +249,9 @@ img {
     height: 70vh;
     background-position: center center;
   }
+  #hook-container{
+    width: auto;
+  }
 }
 /*END HEADER RESPONSIVE STYLE */
 
@@ -269,6 +278,9 @@ img {
   width: 200px;
   height: 200px;
 }
+.active-480px{
+  display: none;
+}
 
 /*SERVICES RESPONSIVE STYLE*/
 /* 
@@ -281,17 +293,26 @@ img {
   }
 }
 @media screen and (max-width:480px){
+  #content-services > p{
+    width: 100%;
+    padding: 10px;
+  }
   #services-container {
     display: flex;
     align-items: center;
   }
   #side-image-container{
-    flex-wrap: wrap;
+    display: none;
   }
   .img-container{
     width: 150px;
     height: 150px;
     flex: 1 1 200px;
+  }
+  .active-480px{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 /*END SERVICES RESPONSIVE STYLE*/
@@ -306,6 +327,7 @@ img {
 }
 #first-steps-container h2{
   margin: 40px 0;
+  font-size: 20px;
 }
 
 /*Tips section*/
@@ -313,16 +335,11 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.tips{
+ .tips{
   padding: 20px;
   margin: 0 auto;
-  width: 70%;
-}
-.tips > ul{
-  margin: 0 auto;
   width: 80%;
-
-}
+} 
 .tips > ul > li{
   list-style: decimal;
 }
@@ -333,7 +350,7 @@ img {
 */
 @media screen and (max-width:480px){
   .tips{
-    width: 90%;
+  padding: 0;
   }}
 
 
@@ -361,6 +378,25 @@ footer div, footer p{
 #social-media-container a:hover{
   color: white;
 }
+/*FOOTER RESPONSIVE RULES 
+  ##Device = MOBILES
+  ##Screen = B/w 480px 
+*/
+@media screen and (max-width:480px){
+  footer{
+    margin-top: 20px;
+    flex-direction: column-reverse;  
+    padding: 20px;  
+  }
+  footer > p{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+
+}
+
+
 /*END FOOTER*/
 
 /*--------------------------*/
