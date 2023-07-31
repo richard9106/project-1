@@ -18,16 +18,30 @@ MENU.
 
 
 
-[<span style="color:lightgreen"> Goal](#website-owner-business-goals)
+[<span style="color:lightgreen"> Bussines Owner Goal](#website-owner-business-goals)
 
-[<span style="color:lightgreen">User-Goal](#user-goals)
+[<span style="color:lightgreen">User Goal](#user-goals)
 
+- [<span style="color:lightgreen">New User Goals](#new-user-goals)
+- [<span style="color:lightgreen">Returning User Goals](#returning-user-goals)
+- [<span style="color:lightgreen">Structure](#structure-of-the-website)
+- [<span style="color:lightgreen">Wireframe](#wireframe)
+- [<span style="color:lightgreen">Surface](#surface-colores--imagenes-y-fuentes)
 
-[<span style="color:lightgreen">Surface](#surface-colores--imagenes-y-fuentes)
-
-[<span style="color:lightgreen">Structure](#structure-of-the-website----wireframe)
+[<span style="color:lightgreen">User Stories](#user-stories)
 
 [<span style="color:lightgreen">Future-implementation](#future-implementations)
+
+[<span style="color:lightgreen">Technology](#technologies-used)
+
+[<span style="color:lightgreen">Testing](#testing)
+
+- [<span style="color:lightgreen">Functionality testing](#functionality-testing)
+- [<span style="color:lightgreen">Compatibility testing](#compatibility-testing)
+- [<span style="color:lightgreen">Code Validation](#code-validation)
+- [<span style="color:lightgreen">User stories testing](#user-stories-testing)
+- [<span style="color:lightgreen">Issues found during site development](#issues-found-during-site-development)
+- [<span style="color:lightgreen"> Performance testing](#performance-testing)
 
 
 ***
@@ -36,14 +50,56 @@ MENU.
 
 ## Website owner business goals
 
- The main goal of this web page is to be able to help people who are going to become parents and have no idea what to do as a second objective is to be able to provide the therapist service.
+ The main goal of this web page is to be able to help people who are going to become parents and have no idea what to do as a second objective is to create a community and be able to provide the therapist service.
 
 ## User goals
 
-* find useful information
-* Be able to contact a specialist if they need it
+
+### New User Goals
+
+* find useful information about been a new parent.
+
+* Be able to contact a specialist if they need it.
+
+* find location of the place and contact information.
+
+### Returning User Goals
+
+* Be able to contact a therapist for help.
+
+* find location of the place and contact information.
+
+* find link's to other pages with more info.
 
 <br>
+
+# user stories
+
+* ### As a bussiness owner
+
+    * help people who are going to become new parents and don't know where start.
+
+    * create a community that can support parents on emotional and psychological issues
+
+    * 
+
+* ### As a New User
+    * I wish to find information about new parents tips or advices.
+
+    * I would like to contact an expert on the subject
+
+    * I would like to find psychological help in case I need it
+
+* ### As a Returning User
+
+    * I would like to find psychological help in case I need it
+
+    * I would like to contact an expert.
+
+    * 
+
+* ### As a bussiness Owner
+
 
 
 ## Surface (colors , images and fonts)
@@ -65,9 +121,13 @@ MENU.
 
 ## Structure of the website
 
+The website is designed to be easy and user-friendy on all type of devices. On desktop, tablet and mobile. All parts are designed to achieve maximum user satisfaction. User will get some interaction from the interface as links and buttons will have a hover effects and animation when the site it's loaded;
+
+## Wireframe
+
 ![Hacks for new parents wireframe](/assets/images/wareframe.png)
 
- * # Features
+# Features
 
     The website consists of 6 pages. Four are accessible from a navigation menu.
     One is a 404 error page and one is a submission confirmation page for a form.
@@ -108,23 +168,23 @@ Each link will open in a separate tab in a browser.
 
         Typs section contains advices to keep in mind when you are a parent for the first time.
 
-* ## Support
+* ## Support Page
 
      Parent Support gives information about therapist and resources like a web site with info about it.
 
-* ## About me
+* ## About me Page
 
     About me gives information about Hacks for new parents like mission and goals.
 
-* ## Contact
+* ## Contact Page
 
     Contact form is a main part on this site. User can contact by filling a form or send us an email directly or call if you wish.
 
 
 ##  Future implementations
 
-* Create iteractive chat for problem resolve.
-* Add new site whit therapists schedule so you can contact them.
+    * Create iteractive chat for problem resolve.
+    * Add new site whit therapists schedule so you can contact them.
 * Login site for paid content including videos, how to do content.
 
 [Back to Table of contents](#table-of-contents)
@@ -160,23 +220,20 @@ ___
 * As an image editor.
 
 
-## Issues found during site development 
-
---
-
 # Testing
 
 ## Functionality testing 
 
- I used Mozilla web developer tools and Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
+ I used Google Chrome web developer tools and Responsively app for testing and solving problems with responsiveness and style issues.
  
- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) extension to chrome browser was very helpful.
+ [Responsively App](https://responsively.app/)was very helpful to see diferent screen sizes.
 
 
 ## Compatibility testing
- Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in both Mozilla web developer tolls and Chrome developer tools. 
+
+ Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in Mozilla, Edge and Google Chrome developer tools. 
  
- I tested on hardware devices such as: Lenovo ideapad with Ubuntu and Windows OS's, Lenovo smartphone with Android 7, Google pixel 3 with Android 11.
+ I tested on hardware devices such as: hp DeskTop with Windows, samsung smartphone with Android 7.
 
 
 ## User stories testing
@@ -235,22 +292,7 @@ To fix this I created new class *.no-row-margin* and set both margins to 0px.
 > I read bootstrap documentation about [Spacing](https://getbootstrap.com/docs/4.0/utilities/spacing/) and I decided to use predefined classes for paddings and margins in the project.
 By doing this I think my code looks cleaner and will be easier to understand by other developers.
 
-
-* #### Ipad screen compatibility
-
-I found a bugs on Ipad screens. I would like to keep years dates just above the stars, but they were shifted.
-
-![testing_issue_2](testing/testing_ipad_screen.png)
-
-I had to create a block element with a class "ipad-screen" and non-breaking space element inside a block element.
-In CSS file I had to create @media rule that will show this block element on Ipad displays only.
-
->}
-@media screen and (max-width: 991px) and (min-width: 0px),(min-width:1200px){
-    .ipad-screen {
-    display: none;
-}
-}
+/////
 
 ![bug_solutino1](testing/bug_solution1.png)
 
