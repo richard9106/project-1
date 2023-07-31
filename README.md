@@ -273,7 +273,7 @@ ___
 ---
 ## Issues found during site development
 
-* #### Horizontal scrolling bar on the bottom of the screen.
+* #### menu style is not efficient and does not look good
 ![testing_issue_1](testing/testing_issue_1.png)
 
 I used [grid markup](https://getbootstrap.com/docs/4.5/components/card/#header-and-footer)
