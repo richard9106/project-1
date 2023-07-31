@@ -81,8 +81,6 @@ MENU.
 
     * create a community that can support parents on emotional and psychological issues
 
-    * 
-
 * ### As a New User
     * I wish to find information about new parents tips or advices.
 
@@ -96,9 +94,7 @@ MENU.
 
     * I would like to contact an expert.
 
-    * 
-
-* ### As a bussiness Owner
+    * I would like be part of the community and get more information.
 
 
 
@@ -125,14 +121,14 @@ The website is designed to be easy and user-friendy on all type of devices. On d
 
 ## Wireframe
 
-![Hacks for new parents wireframe](/assets/images/wareframe.png)
+![Hacks for new parents wireframe](/assets/images/frame1.png)
 
 # Features
 
-    The website consists of 6 pages. Four are accessible from a navigation menu.
-    One is a 404 error page and one is a submission confirmation page for a form.
+The website consists of 6 pages. Four are accessible from a navigation menu.
+One is a 404 error page and one is a submission confirmation page for a form.
 
-    The website has below features:
+The website has below features:
 
 * # Navigation bar
 
