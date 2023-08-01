@@ -274,19 +274,18 @@ ___
 ## Issues found during site development
 
 * #### menu style is not efficient and does not look good
-![testing_issue_1](testing/testing_issue_1.png)
 
-I used [grid markup](https://getbootstrap.com/docs/4.5/components/card/#header-and-footer)
-to create two sepereate collumns. To achieve this I had to use *.row* in first *div* element and *.col-sm-6* in the second *div* element.
-After that I found that horizontal scrolling bar appear on the bottom of the screen.
-Using mozilla developer tools I noticed that by default class *.row* has *margin-right: -15px;* and *margin-left: -15px;*
+![testing_issue_1](./assets/images/test/error-menu.jpg)
 
-To fix this I created new class *.no-row-margin* and set both margins to 0px.
+I used  a display block to put the menu items closer together and then change the display position from full screen to just a section below the menu bar, also I changed the colors to make look better
 
-> After I gain more experience with bootstrap I found that I could achive this by [no-gutters](https://getbootstrap.com/docs/4.0/layout/grid/#no-gutters) class.
+![testing_issue_1_fixed](./assets/images/test/nuevo%20menu.jpg)
 
-> I read bootstrap documentation about [Spacing](https://getbootstrap.com/docs/4.0/utilities/spacing/) and I decided to use predefined classes for paddings and margins in the project.
-By doing this I think my code looks cleaner and will be easier to understand by other developers.
+* ### one of the boxes escapes from the screen in mobile version.
+
+![testing_issue_1_fixed](./assets/images/test/support-error.jpg)
+
+
 
 /////
 
