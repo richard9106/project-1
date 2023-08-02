@@ -26,7 +26,7 @@ MENU.
 - [<span style="color:lightgreen">Returning User Goals](#returning-user-goals)
 - [<span style="color:lightgreen">Structure](#structure-of-the-website)
 - [<span style="color:lightgreen">Wireframe](#wireframe)
-- [<span style="color:lightgreen">Surface](#surface-colores--imagenes-y-fuentes)
+- [<span style="color:lightgreen">Surface](#surface-colors--images-and-fonts)
 
 [<span style="color:lightgreen">User Stories](#user-stories)
 
@@ -179,8 +179,8 @@ Each link will open in a separate tab in a browser.
 
 ##  Future implementations
 
-    * Create iteractive chat for problem resolve.
-    * Add new site whit therapists schedule so you can contact them.
+* Create iteractive chat for problem resolve.
+* Add new site whit therapists schedule so you can contact them.
 * Login site for paid content including videos, how to do content.
 
 [Back to Table of contents](#table-of-contents)
@@ -222,14 +222,14 @@ ___
 
  I used Google Chrome web developer tools and Responsively app for testing and solving problems with responsiveness and style issues.
  
- [Responsively App](https://responsively.app/)was very helpful to see diferent screen sizes.
+ [Responsively App](https://responsively.app/) was very helpful to see diferent screen sizes.
 
 
 ## Compatibility testing
 
  Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in Mozilla, Edge and Google Chrome developer tools. 
  
- I tested on hardware devices such as: hp DeskTop with Windows, samsung smartphone with Android 7.
+ I tested on hardware devices such as: hp DeskTop with Windows, samsung smartphone with Android 11.
 
 
 ## User stories testing
@@ -237,37 +237,36 @@ ___
 ### As a business owner:
 
 - I would like to present myself and my offer on the website clearly to potential customers.
-    > Name, photo of the instructor and top skills are on each page in portfolio section. Career path section at home page provides more details.
+    > Name, company logo and abut us pague on the navegation menu
 
-- I need to make sure that my current and new customers will find a professional help with their diets, personal or group trainings.
-    > Customers can achieve this by contacting through contact form. They can choose interesting topic and describe their needs in a message box.
+- I need to make sure that my current and new customers will find all information easy.
+    > Customers can see all info and links in the main page or home page 
 
-- I want my customers to be able to learn how to use my website intuitively and easily.
-    > Each site has a fixed navigation menu and is accessible at all times. All content is presented with minimalistic approach.
+- I want my customers can contact in diferent ways.
+    > They have diferent ways to contact us in the contact page including contact form and other ways like email and phone number.
 
-- I would like to build and maintain relationship with potential and current customers.
-    > Customers are able to find a links to social channels at the bottom of each page. Alternatively they can contact by email or contact form.
+- I would like to build and maintain our community with potential and current visitors.
+    > visitors are able to find a links to social channels at the bottom of each page.
 
 
 ### As a new customer:
-- wish to find information about personal trainer and check her/his qualifications.
-    > User can see essential description on the home page. More information can be find in about page.
+- I wish to find information about new parents tips or advices.
+    >All information it's on the Home page
 
-- I would like to contact with a diet coach to change my eating habits and start healthy lifestyle.
-    > User can find a contact form in contact page. Alternatively can use an email. Email address if located in a footer the bottom of each page.
-
-- I want to join in a fitness group with professional trainer, to find motivation and spend time actively.
-    > Brief class description of fitness group classes can be find on the home page below career path section. Offer site provides more detailed description. Frome there user can click contact us button and send a message to the traier.
-
+- I would like to contact an expert on the subject
+    >In the Support page they can find all information and links to find a therapist.
+- I would like to find psychological help in case I need it
+    >In the Support page they can find all information and links to find a therapist.
+    
 ### As a returning customer:
-- I need to contact my diet coach to reschedule my meeting.
-    > User can find a contact form in contact page. Alternatively can use social channels or email.
+-  I would like to find psychological help in case I need it
+    >In the Support page they can find all information and links to find a therapist.
+    
+- I would like to contact an expert.
+     >In the Support page they can find all information and links to find a therapist or in the contact page you can contact the companie and we will help you.
 
-- I would like to check timetable for current days and times for a group trainings.
-    > Each site has time table at the bottom of the page.
-
-- I want to show my friend a location of the fitness studio where we can join for a semi private personal training.
-    > Each page contains location information in a footer. Users are able to find a location map in contact page.
+- I would like be part of the community and get more information.
+    > There are social media links in all pages at the end fo each one.
 
 
 ---
