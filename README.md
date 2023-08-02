@@ -285,7 +285,9 @@ I used  a display block to put the menu items closer together and then change th
 
 ![testing_issue_1_fixed](./assets/images/test/support-error.jpg)
 
+To fix this bug in the mobile version I have changed the width:400px to 90% in the media query 480px.
 
+![testing_issue_1_fixed](./assets/images/test/su)
 
 /////
 
