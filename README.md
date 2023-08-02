@@ -308,11 +308,11 @@ and I gave him a width:95% in a mobile version.
 I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website.
 I had to do couple of changes to improve performance. Screenshots are presented below:
 
-![bug_performance1](testing/performance1.png)
-![bug_performance2](testing/performance2.png)
+![bug_performance1](./assets/images/test/preformance-test-1.jpg)
+![bug_performance2](./assets/images/test/preformance-test-2.jpg)
 
 Final results:
-![performance_final](testing/performance_final.png)
+![performance_final](./assets/images/test/preformance-fixeed.jpg)
 I noticed that this tests scores vary from time to time and depends on external libraries as well. 
 
 
