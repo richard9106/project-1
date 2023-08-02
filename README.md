@@ -12,7 +12,7 @@
 
 HacksFNP (For New Parents) is a website that helps people who are going to be parents for the first time, as we understand that it can be very difficult. We gather the experience not only of ourselves as parents but also of all people since we all go through the same situations or challenges.
 
-![Hacks for new parents view](/assets/images/responsive_end.png)
+![Hacks for new parents view](./assets/images/responsive%20_end.png)
 
 MENU.
 
