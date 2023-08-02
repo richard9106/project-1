@@ -281,19 +281,27 @@ I used  a display block to put the menu items closer together and then change th
 
 ![testing_issue_1_fixed](./assets/images/test/nuevo%20menu.jpg)
 
-* ### one of the boxes escapes from the screen in mobile version.
+* ### one of the boxes in support page escapes from the screen in mobile version.
 
-![testing_issue_1_fixed](./assets/images/test/support-error.jpg)
+![testing_issue_2](./assets/images/test/support-error.jpg)
 
 To fix this bug in the mobile version I have changed the width:400px to 90% in the media query 480px.
 
-![testing_issue_1_fixed](./assets/images/test/su)
+![testing_issue_2_fixed](./assets/images/test/support-fixed.jpg)
 
-/////
+* The holderplace text in contact form is to small and it's hard to read.
 
-![bug_solutino1](testing/bug_solution1.png)
+![testing_issue_3](./assets/images/test/form-error.jpg)
 
-![bug_solutino2](testing/bug_solution2.png)
+
+To fix this bug I commented in the Normalize.css document the line 164 that had a font-zise: 100% and font-family: inherit and in the style.css file I 
+and I gave him a width:95% in a mobile version.
+
+![testing_issue_3_fixed](./assets/images/test/form-fixed.jpg)
+
+<hr>
+<hr>
+
 
 ## Performance testing
 
