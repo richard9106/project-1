@@ -329,25 +329,29 @@ I noticed that this tests scores vary from time to time and depends on external 
 ___
 # Deployment
 
-The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system.
-I used push command in Gitpod to save changes into GitHub.
+The project was deployed on GitHub Pages. I used VsCode as a development environment where I commited all changes to git version control system.
+I used push command in VsCode save changes into GitHub.
 
 To deploy a project I had to:
 
-* Log in to GitHub and click on repository to deploy ([MP1](https://github.com/marcin-kli/MP1))
+* Log in to GitHub and click on repository to deploy ([PROJECT 1](https://github.com/richard9106/project-1))
 * select `Settings` and find GitHub Pages section at the very bottom of the page
 * from source select `none` and then `Milestone-Projects` branch.
 * click `save` and page was deployed after auto-refresh.
->  Your site is published at https://marcin-kli.github.io/MP1/
+>  Your site is published at https://richard9106.github.io/project-1/
 
 To run localy:
-* Log in to GitHub and click on repository to download ([MP1](https://github.com/marcin-kli/MP1))
-* select `Code` and click Download the ZIP file.
-* after download you can extract the file and use it in your local environment 
+
+### Firts method
+* Log in to VScode account and link your repository to be open with VScode.
+### Second method
+* Creating a virtual space in gitHub https://github.com/richard9106/project-1 open the repository and then click on CODE green buttom and create a virtual space.
+* once it has been created you can open it with VScode directly from your virtual space.
+
 
 Alternatively you can [Clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-this repository ([MP1](https://github.com/marcin-kli/MP1)) into your github account.
+this repository ([PROJECT 1](https://github.com/richard9106/project-1)) into your github account.
 
 [Back to Table of contents](#table-of-contents)
 ___
@@ -358,41 +362,18 @@ ___
 
 * Ideas and knowledge library:
 
-    * [w3schools.com](https://www.w3schools.com)
-
-    * [css-tricks.com](https://css-tricks.com/)
-
-    * [getbootstrap.com/docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-        I used code for navbar, jumbotron and card from Bootstrap.
+    * [w3schools.com](https://www.w3schools.com)  I used code for navbar and style the contact form.
 
 ### Code
 
 * Links transition: [CSS transition Property](https://www.w3schools.com/cssref/css3_pr_transition.asp)
-* Bootstrap: [Kitchen sink](https://getbootstrap.com/docs/4.0/components/card/#kitchen-sink)
-* Bootstrap: [Burger menu](https://getbootstrap.com/docs/4.5/components/navbar/#text)
-* Bootstrap: [Jumbotron](https://getbootstrap.com/docs/4.5/components/jumbotron/)
-* Bootstrap: [Form](https://getbootstrap.com/docs/4.5/components/forms/)
-### Content:
-*  General content:  [fitlife.ie](http://fitlife.ie/lessons-its-your-life-your-fit-life/)
 
-### Map location:
-* [fitlife.ie](http://fitlife.ie/)
 
-### Map:
-* [Google maps](https://www.google.com/maps?ll=52.059441,-9.511501&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=7306226195280410511)
 
 ### Images:
 
-#### Unsplash.com:
-* [annie-spratt--l-eemJU0vE-unsplash.jpg](https://unsplash.com/photos/-l-eemJU0vE)
+* link images page [Unsplash](https://unsplash.com/es/s/fotos/familia-con-bebe)
 
-* [ziphaus-SZ40Lbw1P5o-unsplash.jpg](https://unsplash.com/photos/SZ40Lbw1P5o)
-
-* [bruce-mars-y0SMHt74yqc-unsplash.jpg](https://unsplash.com/photos/y0SMHt74yqc)
-
-* [luis-quintero-EPrjIYQrpkU-unsplash.jpg](https://unsplash.com/photos/EPrjIYQrpkU)
-
-* [sven-scheuermeier-saGbrA6s8g0-unsplash.jpg](https://unsplash.com/photos/saGbrA6s8g0)
 
 
 [Back to Table of contents](#table-of-contents)
