@@ -153,6 +153,9 @@ img {
     color: #9c460c;
     padding: 10px;
   }
+  .topnav > li{
+    margin-bottom: 10px;
+  }
 
   .responsive{
     display: block;
