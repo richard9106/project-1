@@ -565,6 +565,13 @@ footer div, footer p{
   #about-container{
     width: 90%;
   }
+  
+  #about-container > div:last-child{
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+  }
+
   #img-about{
     display: block;
     margin: 0 auto;
@@ -578,12 +585,7 @@ footer div, footer p{
 
 
 @media screen and (max-width:480px){
-  #about-container > div:last-child{
-    width: 95%;
-    padding:10px;
-    border-radius: 10px;
-  }
-
+  
   #about-container > div:last-child h3{
     text-align: center;
   }
@@ -683,12 +685,6 @@ input[type=reset]:hover{
 @media screen and (max-width:768px){
   #form-container,#header-container-contact{
     width: 95%;
-  }  
-  
-}
-@media screen and (max-width:480px){
-  #form-container{
-    width: 95%;
     display: flex;
     flex-direction: column;
     padding:0;
@@ -698,6 +694,9 @@ input[type=reset]:hover{
     margin-bottom: 20px;
     border-radius: 10px;
   }
+  
+}
+@media screen and (max-width:480px){
   .align-left{
     text-align: left;
   }
