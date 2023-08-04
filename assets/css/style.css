@@ -701,3 +701,17 @@ input[type=reset]:hover{
     text-align: left;
   }
 }
+
+/*Error page style*/
+#header-error{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#footer-error{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: auto;
+}
