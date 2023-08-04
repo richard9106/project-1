@@ -575,6 +575,21 @@ footer div, footer p{
   }
   
 }
+
+
+@media screen and (max-width:480px){
+  #about-container > div:last-child{
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+  }
+
+  #about-container > div:last-child h3{
+    text-align: center;
+  }
+ 
+  
+}
 /*END RESPONSIVE DESIGN ABOUT PAGE*/
 /*END ABPUT PAGE STYLE*/
 
@@ -617,7 +632,7 @@ footer div, footer p{
   display:flex;
 }
 label,option{
-  font-size: 15px;
+  font-size: 20px;
   color: #9c460c;
 }
 
@@ -682,5 +697,8 @@ input[type=reset]:hover{
     width: 100%;
     margin-bottom: 20px;
     border-radius: 10px;
+  }
+  .align-left{
+    text-align: left;
   }
 }
